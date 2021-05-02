@@ -14,15 +14,16 @@ test('Given an object, return a new array that only includes the object key age.
   expect(output).toEqual(['age']); //assert
 });
 
-test.only('getArrayOfKeysAndValues', () => {
+test('getArrayOfKeysAndValues', () => {
   const dataObject = { name: 'Angelina Jolie', age: 80 }; //arrange
   const output = getArrayOfKeysAndValues(dataObject); //act
   console.log(output)
   expect(output).toEqual([['name', 'Angelina Jolie'], ['age', 80]]); //assert
 });
 
-test('sortedArraysByValuesLength', () => {
+test.only('sortedArraysByValuesLength', () => {
   const dataObject = { name: 'Bob', friend: 'Tom Hanks', location: 'Los Angeles' }; //arrange
   const output = sortedArraysByValuesLength(dataObject); //act
+  console.log(output)
   expect(output).toEqual([['location', 'Los Angeles'], ['friend', 'Tom Hanks'], ['name', 'Bob']]); //assert
 });

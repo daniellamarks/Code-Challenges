@@ -10,3 +10,9 @@ export function getFilteredKey(obj) {
 export function getArrayOfKeysAndValues(obj) {
     return Object.entries(obj)
 }
+
+export function sortedArraysByValuesLength(obj) {
+    return Object.entries(obj).sort((string1, string2) => 
+    string2[0].length - string1[0].length
+    )
+}
