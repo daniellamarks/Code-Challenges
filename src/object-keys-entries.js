@@ -1,4 +1,8 @@
 
+export function capitalizeObjectKeys(obj) {
+    return Object.keys(obj).map((key) => key.toUpperCase())
+}
+
 export function sortedKeys(obj) {
     return Object.keys(obj).sort((string1, string2) => string1.length - string2.length)
 }

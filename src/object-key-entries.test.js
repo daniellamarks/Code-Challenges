@@ -1,4 +1,11 @@
-import { getArrayOfKeysAndValues, getFilteredKey, sortedArraysByValuesLength, sortedKeys } from './object-keys-entries.js';
+import { capitalizeObjectKeys, getArrayOfKeysAndValues, getFilteredKey, sortedArraysByValuesLength, sortedKeys } from './object-keys-entries.js';
+
+test('it capitalizes the keys', () => {
+  const dataObject = { name: 'Angelina Jolie', age: 80 }; //arrange
+  const output = capitalizeObjectKeys(dataObject); //act
+  console.log(output)
+  expect(output).toEqual(['NAME', 'AGE']); //assert
+});
 
 test('keys sorted smallest to largest by length', () => {
   const dataObject = { name: 'Spot', age: 3, isDog: true, friends: ['Rover', 'Steve', 'Fluffy'] }; //arrange
@@ -21,7 +28,7 @@ test('getArrayOfKeysAndValues', () => {
   expect(output).toEqual([['name', 'Angelina Jolie'], ['age', 80]]); //assert
 });
 
-test.only('sortedArraysByValuesLength', () => {
+test('sortedArraysByValuesLength', () => {
   const dataObject = { name: 'Bob', friend: 'Tom Hanks', location: 'Los Angeles' }; //arrange
   const output = sortedArraysByValuesLength(dataObject); //act
   console.log(output)
