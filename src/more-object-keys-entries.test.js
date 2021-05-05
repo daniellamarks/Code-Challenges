@@ -59,7 +59,7 @@ test.only('it returns an array of transformed key value pairs into strings', () 
   }; //arrange
   const output = updateNumbers(input); //act
   console.log(output);
-  expect(output).toEqual(['Grace Hopper: 222-303-5938', 'Ada Lovelace: 222-349-9842', 'Alan Turing: 222-853-5933']); //assert
+  expect(output).toEqual(expect.arrayContaining(['Grace Hopper: 222-303-5938', 'Ada Lovelace: 222-349-9842', 'Alan Turing: 222-853-5933'])); //assert
 });
 
 test('Given an array of characters, your function will return the total number of characters in the data array. Hint you need to count the spouse, the children and the character for the total.', () => {

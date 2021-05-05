@@ -3,9 +3,9 @@ export function getHouses(obj) {
 }
 
 export function updateNumbers(obj) {
-  let array = Object.entries(obj);
-  let strings = Object.fromEntries(array);
-  return strings;
+  let arrayOuter = Object.entries(obj);
+  return arrayOuter.map(arrayItem => `${arrayItem[0]}: ${arrayItem[1]}`);
+
 }
 
 export function totalCharacters(arr) {
@@ -16,3 +16,6 @@ export function hasChildrenEntries(arr, character) {
 
 export function sortByChildren(arr){
 } 
+
+// arr.map(name => 
+//   name[0].toUpperCase() + name.slice(1).toLowerCase()
