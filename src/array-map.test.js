@@ -53,7 +53,7 @@ test('names only', () => {
 });
 
 test('make strings', () => {
-    const input = 
+  const input = 
       [
         {
           name: 'Angelina Jolie',
@@ -76,19 +76,19 @@ test('make strings', () => {
           age: 100
         }
       ]; // arrange
-    const output = makeStrings(input); // act
-    expect(output).toEqual([
-        "Angelina Jolie can go to The Matrix", 
-        "Eric Jones is under age!!", 
-        "Paris Hilton is under age!!", 
-        "Kayne West is under age!!", 
-        "Bob Ziroll can go to The Matrix"
-    ]); // assert
-  });
+  const output = makeStrings(input); // act
+  expect(output).toEqual([
+    'Angelina Jolie can go to The Matrix', 
+    'Eric Jones is under age!!', 
+    'Paris Hilton is under age!!', 
+    'Kayne West is under age!!', 
+    'Bob Ziroll can go to The Matrix'
+  ]); // assert
+});
 
 
 test('make headers', () => {
-    const input = 
+  const input = 
       [
         {
           name: 'Angelina Jolie',
@@ -112,14 +112,14 @@ test('make headers', () => {
         }
       ]; // arrange
 
-    const output = readyToPutInTheDOM(input); // act
-    expect(output).toEqual([
+  const output = readyToPutInTheDOM(input); // act
+  expect(output).toEqual([
         
-    "<h1>Angelina Jolie</h1><h2>80</h2>", 
-    "<h1>Eric Jones</h1><h2>2</h2>", 
-    "<h1>Paris Hilton</h1><h2>5</h2>", 
-    "<h1>Kayne West</h1><h2>16</h2>", 
-    "<h1>Bob Ziroll</h1><h2>100</h2>"
+    '<h1>Angelina Jolie</h1><h2>80</h2>', 
+    '<h1>Eric Jones</h1><h2>2</h2>', 
+    '<h1>Paris Hilton</h1><h2>5</h2>', 
+    '<h1>Kayne West</h1><h2>16</h2>', 
+    '<h1>Bob Ziroll</h1><h2>100</h2>'
         
-    ]); // assert
-  });
+  ]); // assert
+});
