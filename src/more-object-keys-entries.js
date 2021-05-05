@@ -18,16 +18,34 @@ export function totalCharacters(arr) {
   }
   let children = arr.map(a => a.children);
   let merged = [].concat(...children);
-  console.log(spouse2);
   return name.length + spouse2.length + merged.length
   ;
 }
 
+// export function hasChildrenEntries(arr, character) {
+//   let array;
+//   for (let item of arr) {
+//     array = Object.entries(item);
+//     console.log(array);
+//     if (character === array[0][1] && array[2][1].length > 0) return array[2][1].length;
+//   } ;
+//   // if (character.name && character.children) return true;
+// } 
+
 export function hasChildrenEntries(arr, character) {
-} 
+
+} ;
+  // if (character.name && character.children) return true;
 
 export function sortByChildren(arr){
+  return arr.sort((x, y) => x.children.length - y.children.length);
 } 
+
+// export function leastToGreatest(arr){
+//   return arr.sort((x, y) => x - y);
+// }
 
 // arr.map(name => 
 //   name[0].toUpperCase() + name.slice(1).toLowerCase()
+
+
