@@ -26,15 +26,15 @@ export function totalCharacters(arr) {
 //   if (string.length < 5) return string; else return false;
 // })
 
-export function hasChildrenEntries(arr, character) {
-  let array;
-  for (let item of arr) {
-    array = Object.entries(item);
-    console.log(array);
-    if (character === array[0][1]) {array[2][1].length > 0 ? true : false}
-  } ;
-  // if (character.name && character.children) return true;
-} 
+// export function hasChildrenEntries(arr, character) {
+//   let array;
+//   for (let item of arr) {
+//     array = Object.entries(item);
+//     console.log(array);
+//     if (character === array[0][1]) {array[2][1].length > 0 ? true : false}
+//   } ;
+//   // if (character.name && character.children) return true;
+// } 
 
 
   // if (character.name && character.children) return true;
