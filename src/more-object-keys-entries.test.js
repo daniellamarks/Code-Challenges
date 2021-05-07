@@ -69,7 +69,7 @@ test('Given an array of characters, your function will return the total number o
   expect(output).toEqual(26); //assert
 });
 
-test('Given an arr of objects and a target/character, the function will check if the character has children then return a boolean value of either true or false. Please use Object.entries to solve.', () => {
+test.only('Given an arr of objects and a target/character, the function will check if the character has children then return a boolean value of either true or false. Please use Object.entries to solve.', () => {
   const output1 = hasChildrenEntries(characters, 'Eddard'); 
   const output2 = hasChildrenEntries(characters, 'Euron');//act
   console.log(output1)
@@ -78,7 +78,7 @@ test('Given an arr of objects and a target/character, the function will check if
 });
 
 
-test.only('You will have an array of objects which you will sort through. The houses are sorted by amount of children (and if needed also alphabetically)', () => {
+test('You will have an array of objects which you will sort through. The houses are sorted by amount of children (and if needed also alphabetically)', () => {
   const input = characters; //arrange
   const output = sortByChildren(input); //act
   console.log(output);

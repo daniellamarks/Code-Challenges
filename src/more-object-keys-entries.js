@@ -22,30 +22,27 @@ export function totalCharacters(arr) {
   ;
 }
 
-// export function hasChildrenEntries(arr, character) {
-//   let array;
-//   for (let item of arr) {
-//     array = Object.entries(item);
-//     console.log(array);
-//     if (character === array[0][1] && array[2][1].length > 0) return array[2][1].length;
-//   } ;
-//   // if (character.name && character.children) return true;
-// } 
+// arr.filter(string => {
+//   if (string.length < 5) return string; else return false;
+// })
 
 export function hasChildrenEntries(arr, character) {
+  let array;
+  for (let item of arr) {
+    array = Object.entries(item);
+    console.log(array);
+    if (character === array[0][1]) {array[2][1].length > 0 ? true : false}
+  } ;
+  // if (character.name && character.children) return true;
+} 
 
-} ;
+
   // if (character.name && character.children) return true;
 
 export function sortByChildren(arr){
   return arr.sort((x, y) => x.children.length - y.children.length);
 } 
 
-// export function leastToGreatest(arr){
-//   return arr.sort((x, y) => x - y);
-// }
 
-// arr.map(name => 
-//   name[0].toUpperCase() + name.slice(1).toLowerCase()
 
 
