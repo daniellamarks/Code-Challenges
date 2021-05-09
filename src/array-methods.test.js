@@ -30,7 +30,7 @@ const gruffaloCrumble = {
 }; 
 
 // the tests
-test('howMuchPencil should return a list of shortening words', () => {
+test.only('howMuchPencil should return a list of shortening words', () => {
   expect(howMuchPencil('Welcome')).toStrictEqual(['Welcome', 'elcome', 'lcome', 'come', 'ome', 'me', 'e', '']);
   expect(howMuchPencil('Welcome').length).toStrictEqual(8);
   expect(howMuchPencil('')).toStrictEqual(['']);
@@ -52,7 +52,7 @@ test('stepActions should return array of actions for each step', () => {
   expect(stepActions(gruffaloCrumble)).toStrictEqual(['Pre-heat', 'De-prickle', 'Sprinkle', 'Mix', 'Grease', 'Combine', 'Fold', 'Spread', 'Bake']);
 });
 
-test.only('removeLastCharacters', () => {
+test('removeLastCharacters', () => {
   expect(removeLastCharacters('Gregor', 2)).toStrictEqual('Greg');
   expect(removeLastCharacters('hello', -1)).toStrictEqual('hello');
   expect(removeLastCharacters('wowow', -700)).toStrictEqual('wowow');

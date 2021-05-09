@@ -14,13 +14,29 @@ export function howMuchPencil(str) {
 
   // console.log(str.split(''));
 
+  // let array = [str];
+  // let newString = str.slice(1, str.length);
+  // array.push(newString);
+  // let secondNewString = newString.slice(1, str.length);
+  // array.push(secondNewString);
+  // let thirdNewString = secondNewString.slice(1, str.length);
+  // array.push(thirdNewString);
+
+  // return array;
+
+  // for (let word of str) {
+  //   let newString = str.slice(1, str.length);
+  //   array.push(newString);
+  // } 
+  // console.log(array);
+
   let array = [str];
-  let newString = str.slice(1, str.length);
-  array.push(newString);
-  let secondNewString = newString.slice(1, str.length);
-  array.push(secondNewString);
-  let thirdNewString = secondNewString.slice(1, str.length);
-  array.push(thirdNewString);
+  let splitString = str.split('');
+  console.log('original ' + splitString);
+  for (let i = 1; i < splitString.length + 1; i++) {
+    let sliced = splitString.slice(i).join('');
+    array.push(sliced);
+  } return array;
 }
 
 export function wordsToCharList(str) {
