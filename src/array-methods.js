@@ -30,10 +30,10 @@ export function wordsToCharList(str) {
 
 export function listFoods(recipe){
   const array = recipe.ingredients;
-  const map1 = array.map(item => item.slice(3, item.length));
+  const map1 = array.map(item => item.split(' ').slice(2).join(' '));
 
   console.log(map1);
-
+  return map1;
 }
 
 export function stepActions(recipe){
