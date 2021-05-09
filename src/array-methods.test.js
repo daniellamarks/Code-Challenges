@@ -44,7 +44,7 @@ test('wordsToCharList should return a list of characters', () => {
   expect(wordsToCharList('')).toStrictEqual([]);
 });
 
-test.only('listFoods should return array of ingredients without their amounts', () => {
+test('listFoods should return array of ingredients without their amounts', () => {
   expect(listFoods(gruffaloCrumble)).toStrictEqual(['Gruffalo', 'oats', 'brown sugar', 'flour', 'pure maple syrup', 'chopped nuts', 'baking soda', 'baking powder', 'cinnamon', 'melted butter', 'fresh water']);
 });
 
@@ -52,7 +52,7 @@ test('stepActions should return array of actions for each step', () => {
   expect(stepActions(gruffaloCrumble)).toStrictEqual(['Pre-heat', 'De-prickle', 'Sprinkle', 'Mix', 'Grease', 'Combine', 'Fold', 'Spread', 'Bake']);
 });
 
-test('removeLastCharacters', () => {
+test.only('removeLastCharacters', () => {
   expect(removeLastCharacters('Gregor', 2)).toStrictEqual('Greg');
   expect(removeLastCharacters('hello', -1)).toStrictEqual('hello');
   expect(removeLastCharacters('wowow', -700)).toStrictEqual('wowow');
