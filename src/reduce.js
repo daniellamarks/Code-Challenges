@@ -8,3 +8,9 @@ export function addValues(array) {
   return sum;
 } 
 
+export function addPurchases(array) {
+  const items = array.map(item => item.purchasePrice);
+  const sum = items.reduce((total, currentAmount) => 
+    total + currentAmount);
+  return sum;
+};
