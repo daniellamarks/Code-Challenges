@@ -3,3 +3,10 @@ export function returnTen(str) {
   console.log(array);
   return array;
 }
+
+export function findMax(matrix) {
+  const joined = matrix[0].concat(matrix[1], matrix[2]);
+  console.log(joined);
+  const max = Math.max(...joined);
+  return max
+}
