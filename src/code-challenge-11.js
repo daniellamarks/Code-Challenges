@@ -18,6 +18,10 @@ export function totalSum(matrix) {
   for (let number of newArr) {
     sum += number;
   }
-  console.log(sum)
+  console.log(sum);
   return sum;
+}
+
+export function grandTotal(stores){
+  //for each item in array take the [i] of that item and add it to the [i] index of the next item. 
 }
