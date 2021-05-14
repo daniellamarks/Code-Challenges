@@ -1,4 +1,4 @@
-import { toLastNames, addValues, addPurchases } from './reduce.js';
+import { toLastNames, addValues, addPurchases, countNumberOfElements } from './reduce.js';
 
 const purchases = [
   { 
@@ -26,4 +26,8 @@ test('it takes an array as an input and uses reduce to add the values in the arr
 
 test('given an array of objects as input, uses reduce to find the total amount purchased', () => {
   expect(addPurchases(purchases)).toStrictEqual(900);
+});
+
+test('uses reduce to count the number of elements in the array', () => {
+  expect(countNumberOfElements([1, 2, 3])).toStrictEqual(3);
 });

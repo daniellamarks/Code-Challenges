@@ -14,3 +14,9 @@ export function addPurchases(array) {
     total + currentAmount);
   return sum;
 };
+
+export function countNumberOfElements(array) {
+  const sum = array.reduce((total, current) => 
+    total + 1);
+  return sum;
+}
