@@ -3,8 +3,8 @@ export const sortByChildren = (charArray) => {
     const result = charArray.sort((x, y) => x.children - y.children);
     console.log(result)
     return result
-  }
-};
+  };
+
 
 export const containsW = (str) => {
   if (str.match(/w/)) {
