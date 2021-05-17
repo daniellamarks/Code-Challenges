@@ -10,3 +10,11 @@ export const containsW = (str) => {
     return false;
   }
 };
+
+export const isNum = (input) => {
+  if (/\d+/.test(input)) {
+    return true;
+  } else {
+    return false;
+  }
+};
