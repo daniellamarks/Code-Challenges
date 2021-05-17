@@ -1,6 +1,9 @@
 
 export const sortByChildren = (charArray) => {
- 
+    const result = charArray.sort((x, y) => x.children - y.children);
+    console.log(result)
+    return result
+  }
 };
 
 export const containsW = (str) => {
@@ -19,7 +22,7 @@ export const isNum = (input) => {
   }
 };
 
-const containsWorld = (input) => {
+export const containsWorld = (input) => {
   if (/world/.test(input)) {
     return true;
   } else {

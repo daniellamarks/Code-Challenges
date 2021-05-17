@@ -1,4 +1,4 @@
-import { sortByChildren, containsW, isNum, containesWorld} from './code-challenge-13.js';
+import { sortByChildren, containsW, isNum, containsWorld} from './code-challenge-13.js';
 
 let characters = [
   {
@@ -70,9 +70,9 @@ describe('Testing challenge 3', () => {
 });
 
 describe('Testing challenge 4', () => {
-  test('uuse a regular expression pattern to return true if the input contains the word "world" all in lower-case letters, and false if the input does not', () => {
-    expect(containsW('hello world')).toStrictEqual(true);
-    expect(containsW('Hello World')).toStrictEqual(false);
-    expect(containsW('hello everyone')).toStrictEqual(false);
+  test('use a regular expression pattern to return true if the input contains the word "world" all in lower-case letters, and false if the input does not', () => {
+    expect(containsWorld('hello world')).toStrictEqual(true);
+    expect(containsWorld('Hello World')).toStrictEqual(false);
+    expect(containsWorld('hello everyone')).toStrictEqual(false);
   });
 });
