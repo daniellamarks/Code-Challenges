@@ -1,8 +1,8 @@
 
-export const sortByChildren = (charArray) => {
-    const result = charArray.sort((x, y) => x.children - y.children);
-    console.log(result)
-    return result
+export function sortByChildren(charArray){
+    const result = charArray.sort((x, y) => x.children.length - y.children.length);
+    console.log(result);
+    return result;
   };
 
 
