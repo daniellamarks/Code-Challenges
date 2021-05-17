@@ -18,3 +18,11 @@ export const isNum = (input) => {
     return false;
   }
 };
+
+const containsWorld = (input) => {
+  if (/world/.test(input)) {
+    return true;
+  } else {
+    return false;
+  }
+};
