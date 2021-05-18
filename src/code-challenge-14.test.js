@@ -22,7 +22,7 @@ describe('Challenge 3', () => {
 });
 
 
-describe('Challenge 4', () => {
+describe.skip('Challenge 4', () => {
   test('It should return true if a letter is followed by a number', () => {
     expect(hasNumber('h3ll0')).toStrictEqual(true);
     expect(hasNumber('hello')).toStrictEqual(false);
@@ -30,14 +30,14 @@ describe('Challenge 4', () => {
   });
 });
 
-describe('Challenge 5', () => {
+describe.skip('Challenge 5', () => {
   test('It should return true if email format is followed', () => {
     expect(validateEmail('booger@dani.com')).toStrictEqual(true);
     expect(validateEmail('1234@1234.zinks:3000')).toStrictEqual(false);
   });
 });
 
-describe('Challenge 6', () => {
+describe.skip('Challenge 6', () => {
   test('It should return true if phone number format is valid', () => {
     expect(validatePhoneNumber('(123)-123-1234')).toStrictEqual(true);
     expect(validatePhoneNumber('123-123-1234')).toStrictEqual(true);
