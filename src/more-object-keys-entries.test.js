@@ -62,14 +62,14 @@ test('it returns an array of transformed key value pairs into strings', () => {
   expect(output).toEqual(expect.arrayContaining(['Grace Hopper: 222-303-5938', 'Ada Lovelace: 222-349-9842', 'Alan Turing: 222-853-5933'])); //assert
 });
 
-test('Given an array of characters, your function will return the total number of characters in the data array. ', () => {
+test.skip('Given an array of characters, your function will return the total number of characters in the data array. ', () => {
   const input = characters; //arrange
   const output = totalCharacters(input); //act
   console.log(output);
   expect(output).toEqual(26); //assert
 });
 
-test.only('Given an arr of objects and a target/character, the function will check if the character has children then return a boolean value of either true or false. Please use Object.entries to solve.', () => {
+test.skip('Given an arr of objects and a target/character, the function will check if the character has children then return a boolean value of either true or false. Please use Object.entries to solve.', () => {
   const output1 = hasChildrenEntries(characters, 'Eddard'); 
   const output2 = hasChildrenEntries(characters, 'Euron');//act
   console.log(output1)
