@@ -11,7 +11,7 @@ const alkiBeach = [33, 31, 147, 130, 27, 93, 38, 126, 141, 63, 46, 17];
 const cookieStores = [firstPike, seaTac, seattleCenter, capHill, alkiBeach];
 
 
-test('it should return the last 10 characters of a string as an array', () => {
+test.skip('it should return the last 10 characters of a string as an array', () => {
   expect(returnTen('hello world')).toStrictEqual(['e', 'l', 'l', 'o', ' ', 'w', 'o', 'r', 'l', 'd']);
   expect(returnTen('world')).toStrictEqual(['w', 'o', 'r', 'l', 'd']);
 });
@@ -28,6 +28,6 @@ test(`takes in a matrix of numbers and returns the totalSum of all the numbers`,
   expect(totalSum(expected2)).toStrictEqual(0);
 });
 
-test('it should Return the array of the total number of cookies sold per hour for all of the stores combined', () => {
+test.skip('it should Return the array of the total number of cookies sold per hour for all of the stores combined', () => {
   expect(grandTotal(cookieStores)).toStrictEqual([88, 153, 252, 286, 139, 161, 145, 232, 276, 207, 161, 169]);
 });
