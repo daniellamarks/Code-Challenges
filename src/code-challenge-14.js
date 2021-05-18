@@ -1,4 +1,8 @@
-export function replaceZeros(string){
+export function replaceZeroes(string){
   //<solution>
-  string.replace(/0/g, 'zero');
+  const result = string.replace(/0/gm, `zero`);
+  console.log(result);
+
+  return result;
+
 };
