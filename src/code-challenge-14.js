@@ -16,3 +16,11 @@ export function validatePin(pin) {
   }
 
 };
+
+export const validateWord = (word) => {
+  //<solution>
+  if (word.match(/^[a-zA-Z]{5,10}$/gm)) {
+    return true;
+  } else { return false;
+  }
+};
